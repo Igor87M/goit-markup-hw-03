@@ -10,6 +10,11 @@
     --white-color: #fff;
     --opacity: rgba(255, 255, 255, 0.6);
     --second-btn-back: #F5F4FA;
+    --border-color: rgba(238, 238, 238, 1);
+    --shadow-color-first:rgba(0, 0, 0, 0.12);
+    --shadow-color-second: rgba(0, 0, 0, 0.14);
+    --shadow-color-third:rgba(0, 0, 0, 0.2) ;
+    --border-bottom: #ECECEC;
     --f-w-500: 500;
     --f-w-700: 700;
 }
@@ -96,7 +101,7 @@ body {
 
 /*SITE-HEADER*/
 .site-header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-bottom);
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -290,7 +295,7 @@ body {
 
 .team-item {
     background-color: var(--white-color);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px 0px var(--shadow-color-first), 0px 1px 1px 0px var(--shadow-color-second), 0px 2px 1px 0px var(--shadow-color-third);
     padding-bottom: 30px;
     max-width: 270px;
     height: 368px;
@@ -412,7 +417,7 @@ body {
 }
 
 .portfolio-box {
-    border: 1px solid rgba(238, 238, 238, 1);
+    border: 1px solid var(--border-color);
     padding: 20px 24px;
 }
 
